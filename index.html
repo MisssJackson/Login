@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Inicio de sesión</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="contenedor-datos"> 
+            <!-- Contenedor principal -->
+            <div class="contenedor-titulo">
+                <p>Bienvenido</p>
+            </div>
+            <form action="">
+                <!-- Solicita el email registrado previamente -->
+                <div class="contenedor-username">
+                    <input type="email" placeholder="Usuario" class="datos" id="email">
+                </div>
+                <!-- Contraseña ya registrada en la DB-->
+                <div class="contenedor-password">
+                    <input type="password" placeholder="Contraseña" class="datos" id="password">
+                </div>
+                <!-- Botón para validar los datos y redirigir a la siguiente página -->
+                <div class="boton">
+                    <button class="boton-ingresar" id="ingresar">Ingresar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- Scripts de Firebase -->
+    <script type="module" src="./firebaseAuth.js"></script>
+</body>
+
+</html>
